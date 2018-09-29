@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  域名绑定以及Hexo的NexT主题相关参数配置 |   北极星 </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  <link rel="stylesheet" href="/nayo.min.css"> 
+</head>  
+  <body>   
+    
+      <header class="header">
+	
+  <nav class="header-nav">        
+
+    <span class="iconfont icon-menu mobile-toggle"></span>   	
+
+    <div class="header-menu">          
+              
+          
+            <a class="header-menu-link" id="header-menu-home" href="/">
+              <i class="iconfont icon-home">  
+
+              <span class="header-menu-title">首页</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-archives" href="/archives">
+              <i class="iconfont icon-archives">  
+
+              <span class="header-menu-title">归档</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-tags" href="/tags">
+              <i class="iconfont icon-tags">  
+
+              <span class="header-menu-title">标签</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-about" href="/about">
+              <i class="iconfont icon-about">  
+
+              <span class="header-menu-title">关于</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-search">
+              <i class="iconfont icon-search">  
+            </i></a>
+          
+                  
+    </div>  
+    
+  </nav>
+</header>
+
+   
+
+      <div class="container">       
+          
+          
+            <section class="main">  
+          
+
+          <article class="post">
+  
+	<div class="post-header">
+
+	<p class="post-title">	
+		域名绑定以及Hexo的NexT主题相关参数配置
+	</p>
+			
+
+	<div class="meta-info">	
+	<span>
+		8月 16, 2017
+	</span>
+
+	
+	
+		<i class="iconfont icon-words"></i>
+		<span>
+			1733
+		</span>
+	
+</div>
+
+</div> 
+	 
+
+	  <div class="typo post-content slideDownMin">
+
+		
+
+			
+					<h1 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h1><h2 id="购买域名（未收商家广告费一分一毛）"><a href="#购买域名（未收商家广告费一分一毛）" class="headerlink" title="购买域名（未收商家广告费一分一毛）"></a>购买域名（未收商家广告费一分一毛）</h2><ul>
+<li><p>域名的话，确实有免费的，不过比较麻烦而且并不是永久免费。如果你想在以后搞个大新闻的话，还是建议买个域名，而且一般第一年买的域名也比较便宜。在此我列两个个比较有名的域名注册公司：<a href="http://www.xinnet.com/" target="_blank" rel="noopener">新网</a>、<a href="https://wanwang.aliyun.com/" target="_blank" rel="noopener">万网</a>。</p>
+</li>
+<li><p>其实你也可以通过其他平台来购买，比如腾讯云、阿里云。其他的诸如京东云，坚果云，我没了解过，不过大差不差吧。<br>ps:</p>
+</li>
+</ul>
+<ol>
+<li><p>腾讯云服务器学生机真的便宜，一个月一块钱，而且域名后缀为cn的享有学生价1块钱一年（仅限第一年）</p>
+</li>
+<li><p>阿里云服务器一个月10块，但速度比腾讯云块，而且自我感觉逼格更高。（万网就是阿里旗下的）</p>
+</li>
+<li><p>我真不是做广告的…</p>
+</li>
+</ol>
+<ul>
+<li>至于怎么购买的话，构思一个自己喜欢的域名，然后后缀选择恰当的就行了。别忘了购买之后要解析域名，别忘了解析后要等一段时间才会更新。<br>pps：</li>
+</ul>
+<p>最好选择国外的域名后缀，国内的要备案，忒麻烦。国外例如用.me就挺好。<br><a id="more"></a></p>
+<h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>在你hexo文件的中找到source文件，在文件中创建一个CNAME文件，不要加后缀，然后用编辑器打开CNAME文件，里面添加你的域名即可（不要加http://）</p>
+<p>ps：如果没有编辑器（最好还是下一个例如vscode，vim，notepad++，Sublime Text），可以创建一个txt文档，里面加上你的域名，然后把txt后缀给去掉。</p>
+<p><img src="http://ot6azgqky.bkt.clouddn.com/17-8-27/9584054.jpg" alt="domain"></p>
+<p>例如我的域名是 hanyuspace.cn , 以后就不用输入 davont.github.io</p>
+<p><img src="http://ot6azgqky.bkt.clouddn.com/17-8-27/42392408.jpg" alt="Next"></p>
+<p>填写完了之后再重新部署到github pages上（部署简写命令hexo d -g)</p>
+<blockquote>
+<p>如果输入你的域名后，打不开界面，可能是你的域名没有解析，这个要到你购买域名的网站上去域名解析，网站若不提供去DNSpod.如果解析完成仍打不开的话，得需要等一段时间,一天左右，国际DNS更新要24小时。</p>
+</blockquote>
+<h1 id="NexT主题配置"><a href="#NexT主题配置" class="headerlink" title="NexT主题配置"></a>NexT主题配置</h1><h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><p>首先，我推荐两个官方参考文档。</p>
+<p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></p>
+<p><a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next</a></p>
+<p>其实这两个文档已解决基本问题，有什么要求直接按照文档去改。</p>
+<ul>
+<li>如果改博客整体框架例如博客名称、作者、网址、目录等等，那么直接在你的博客文件家目录找到_config.yml文件（中文名叫做站点配置文件），编辑即可。（当然需要编辑器打开啦）</li>
+</ul>
+<p><img src="http://ot6azgqky.bkt.clouddn.com/17-8-27/23437754.jpg" alt="domain"></p>
+<p>如果想在NexT主题里更改，在theme中找到next，然后在next找到_config.yml文件，编辑即可。</p>
+<p><img src="http://ot6azgqky.bkt.clouddn.com/17-8-27/50149441.jpg" alt="theme"></p>
+<h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><p>blog目录下的_config.yml里有很多配置项，先解释几个初学者最在意的：</p>
+<ul>
+<li>title: 博客主页标题</li>
+<li>url: 你的博客网址，例如<a href="http://yoursite.com">http://yoursite.com</a></li>
+<li>permalink: 每篇文章的URL链接格式，例如:year/:month/:title/，注意不要漏掉最后的/</li>
+<li>date_format: 每篇文章日期的格式，如YYYY-MM-DD会显示2014-01-01，具体格式设置方法参考</li>
+<li>moment.js</li>
+<li>per_page: 每页显示的文章数量</li>
+</ul>
+<p>修改_config.yml要格外注意，每项冒号后面都加一个空格，另外不要出现tab。</p>
+<h2 id="语言设置"><a href="#语言设置" class="headerlink" title="语言设置"></a>语言设置</h2><blockquote>
+<p>language: zh-Hans</p>
+</blockquote>
+<h2 id="NexT-主题更换"><a href="#NexT-主题更换" class="headerlink" title="NexT 主题更换"></a>NexT 主题更换</h2><p>NexT 主题目前提供了3中风格类似，但是又有点不同的主题风格，可以通过修改 主题配置文件 中的 Scheme 值来启用其中一种风格，例如我的博客用的是 Pisces 分栏风格，只要把另外两个用#注释掉即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#Schemes</span><br><span class="line"></span><br><span class="line">#scheme: Muse</span><br><span class="line"></span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br></pre></td></tr></table></figure>
+<h2 id="发布新文章"><a href="#发布新文章" class="headerlink" title="发布新文章"></a>发布新文章</h2><p>在终端输入:</p>
+<p><code>$ hexo new &quot;文章名称&quot;</code></p>
+<p>之后在source/_posts目录下面，多了一个以md后缀的文件，文件名就是你刚刚设置的文章名称</p>
+<p>打开之后我们会看到：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"></span><br><span class="line">title: new article</span><br><span class="line"></span><br><span class="line">date: 2014-11-01 20:10:33</span><br><span class="line"></span><br><span class="line">tags:</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>文件的开头是属性，采用统一的yaml格式，用三条短横线分隔。下面是文章正文。</p>
+<p>文章的正文支持markdown格式，建议你先学习一下它的语法。markdown不像html似的一大堆标签，很简单，只有几个符号。</p>
+<p>新建、删除或修改文章后，不需要重启hexo server，刷新一下即可预览。</p>
+  	
+					
+	  </div>     
+	  
+
+	
+<div class="post-meta">
+      	
+
+      
+        <i class="iconfont icon-tag"></i>     
+          <a class="tag-link" href="/tags/Hexo/">Hexo</a> <a class="tag-link" href="/tags/域名/">域名</a>    
+      	
+</div>
+
+
+
+
+
+<div class="post-footer">
+  <div class="pf-left">
+      <img class="pf-avatar" src="/images/header.png">
+      <p class="pf-des">臣门若市，臣心如水。</p>
+  </div>
+
+  <div class="pf-right">           
+      <div class="pf-links">
+        
+
+
+
+
+<span class="donate-btn">
+	<span class="iconfont icon-donate"></span>
+</span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="noLazyLoad donate-img lazyload" src="/images/placeholder.png" alt="No Donate Image!" data-src="/images/donate1.png">	
+		<img id="donate-qr-alipay" class="noLazyLoad donate-img lazyload" src="/images/placeholder.png" alt="No Donate Image!" data-src="/images/donate2.png">	
+	</div>
+
+	<span class="donate-word">愿你一生努力，一生被爱。</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
+
+ 
+        
+	
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		   			             
+            <a class="iconfont  icon-share-qq -mob-share-qq"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weibo -mob-share-weibo"></a>		
+     	   			             
+            <a class="iconfont  icon-share-douban -mob-share-douban"></a>		
+     	   			             
+            <a class="iconfont  icon-share-facebook -mob-share-facebook"></a>		
+     	   			             
+            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
+     	   			             
+            <a class="iconfont  icon-share-google -mob-share-google"></a>		
+     	   
+	</div>	
+
+      </div>  
+    <nav class="pf-paginator">
+      
+         
+          <a href="/2017/08/27/found-git”的解决方案/" data-hover="“ERROR Deployer not found:git”的解决方案">上一篇</a>      
+            
+        
+      
+        
+        <a href="/2017/07/16/用githubPages-Hexo零基础搭建个人博客/" data-hover="用githubPages+Hexo零基础搭建个人博客"> 下一篇</a>
+            
+  </nav>   
+  </div>
+</div> 
+	
+
+
+    
+    <div id="disqus_thread"></div>
+
+    <script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://'+'lemonreds'+'.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());    
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+
+	
+</article>
+
+	<div class="toc-container">
+			<div class="sidebar">
+			<p class="toc-title">
+				<i class="iconfont icon-toc"></i>
+				目录
+			</p>
+			<div class="toc-list">
+				<ol class="toc-inner"><li class="toc-inner-item toc-inner-level-1"><a class="toc-inner-link" href="#域名"><span class="toc-inner-text">域名</span></a><ol class="toc-inner-child"><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#购买域名（未收商家广告费一分一毛）"><span class="toc-inner-text">购买域名（未收商家广告费一分一毛）</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#域名绑定"><span class="toc-inner-text">域名绑定</span></a></li></ol></li><li class="toc-inner-item toc-inner-level-1"><a class="toc-inner-link" href="#NexT主题配置"><span class="toc-inner-text">NexT主题配置</span></a><ol class="toc-inner-child"><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#参考文档"><span class="toc-inner-text">参考文档</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#基本操作"><span class="toc-inner-text">基本操作</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#语言设置"><span class="toc-inner-text">语言设置</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#NexT-主题更换"><span class="toc-inner-text">NexT 主题更换</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#发布新文章"><span class="toc-inner-text">发布新文章</span></a></li></ol></li></ol>
+			</div>
+		</div>
+	</div>
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    
+    <div class="search-container sildeUpMin">
+        <div class="search-header">
+            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">
+            <span class="search-cancel">
+                <i class="iconfont icon-cancel">
+            </i></span>
+        </div>
+        <div id="search-result" class="search-result"></div>
+    </div>
+ 
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon lazyload" src="/images/placeholder.png" data-src="/images/favicon.png">   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">首页
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">归档
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">标签
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">关于
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
+            
+         
+      
+</div>        
+    
+
+
+
+     
+    
+
+
+
+
+<footer id="footer">	    
+
+		
+		<div class="footer-copyright">
+		&copy;
+		
+		2018		
+	
+		davont
+		<br>
+
+		Theme By
+		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
+		</div>			
+	 
+</footer>   
+
+  
+
+    <script src="/nayo.bundle.js"></script>           
+  </body>        
+</html>

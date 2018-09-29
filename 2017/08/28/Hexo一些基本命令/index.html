@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  
+  
+  <title>  Hexo一些基本命令 |   北极星 </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  <link rel="stylesheet" href="/nayo.min.css"> 
+</head>  
+  <body>   
+    
+      <header class="header">
+	
+  <nav class="header-nav">        
+
+    <span class="iconfont icon-menu mobile-toggle"></span>   	
+
+    <div class="header-menu">          
+              
+          
+            <a class="header-menu-link" id="header-menu-home" href="/">
+              <i class="iconfont icon-home">  
+
+              <span class="header-menu-title">首页</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-archives" href="/archives">
+              <i class="iconfont icon-archives">  
+
+              <span class="header-menu-title">归档</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-tags" href="/tags">
+              <i class="iconfont icon-tags">  
+
+              <span class="header-menu-title">标签</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-about" href="/about">
+              <i class="iconfont icon-about">  
+
+              <span class="header-menu-title">关于</span>
+            </i></a>     
+          
+              
+          
+            <a class="header-menu-link" id="header-menu-search">
+              <i class="iconfont icon-search">  
+            </i></a>
+          
+                  
+    </div>  
+    
+  </nav>
+</header>
+
+   
+
+      <div class="container">       
+          
+          
+            <section class="main">  
+          
+
+          <article class="post">
+  
+	<div class="post-header">
+
+	<p class="post-title">	
+		Hexo一些基本命令
+	</p>
+			
+
+	<div class="meta-info">	
+	<span>
+		8月 28, 2017
+	</span>
+
+	
+	
+		<i class="iconfont icon-words"></i>
+		<span>
+			782
+		</span>
+	
+</div>
+
+</div> 
+	 
+
+	  <div class="typo post-content slideDownMin">
+
+		
+
+			
+					<h3 id="其实只是个笔记，方便拿来看看"><a href="#其实只是个笔记，方便拿来看看" class="headerlink" title="其实只是个笔记，方便拿来看看"></a><em><strong>其实只是个笔记，方便拿来看看</strong></em></h3><p>感兴趣直接去Hexo官方文档处查看最全面的命令</p>
+<p><em><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">传送门</a></em><br><a id="more"></a></p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p><code>npm install hexo -g</code></p>
+<p>#安装</p>
+<p><code>npm update hexo -g</code></p>
+<p>#升级</p>
+<p><code>npm init</code></p>
+<p>#初始化</p>
+<h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><p><code>hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot;</code>#新建文章</p>
+<p><code>hexo p == hexo publish</code></p>
+<p><code>hexo g == hexo generate</code>#生成</p>
+<p><code>hexo s == hexo server</code> #启动服务预览</p>
+<p><code>hexo d == hexo deploy</code> #部署</p>
+<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><p><code>hexo server</code> #Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
+<p><code>hexo server -s</code> #静态模式</p>
+<p><code>hexo server -p 5000</code> #更改端口</p>
+<p><code>hexo server -i 192.168.1.1</code>#自定义 IP</p>
+<p><code>hexo clean</code>#清除缓存 网页正常情况下可以忽略此条命令</p>
+<p><code>hexo g</code> #生成静态网页</p>
+<p><code>hexo d</code> #开始部署</p>
+<h2 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h2><p><code>hexo generate</code> #使用 Hexo 生成静态文件快速而且简单</p>
+<p><code>hexo generate --watch</code> #监视文件变动</p>
+<h2 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h2><p>两个命令的作用是相同的</p>
+<p><code>hexo generate --deploy</code><br><code>hexo deploy --generate</code><br><code>hexo deploy -g</code><br><code>hexo server -g</code><br><code>hexo d -g</code><br><code>hexo g -d</code></p>
+<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><p><code>hexo publish [layout] &lt;title&gt;</code></p>
+<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><p><code>hexo new &quot;postName&quot;</code> #新建文章</p>
+<p><code>hexo new page &quot;pageName&quot;</code> #新建页面</p>
+<p><code>hexo generate</code> #生成静态页面至public目录</p>
+<p><code>hexo server</code> #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
+<p><code>hexo deploy</code> #将.deploy目录部署到GitHub</p>
+  	
+					
+	  </div>     
+	  
+
+	
+<div class="post-meta">
+      	
+
+      
+        <i class="iconfont icon-tag"></i>     
+          <a class="tag-link" href="/tags/Hexo/">Hexo</a>    
+      	
+</div>
+
+
+
+
+
+<div class="post-footer">
+  <div class="pf-left">
+      <img class="pf-avatar" src="/images/header.png">
+      <p class="pf-des">臣门若市，臣心如水。</p>
+  </div>
+
+  <div class="pf-right">           
+      <div class="pf-links">
+        
+
+
+
+
+<span class="donate-btn">
+	<span class="iconfont icon-donate"></span>
+</span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="noLazyLoad donate-img" src="/images/donate1.png" alt="No Donate Image!">	
+		<img id="donate-qr-alipay" class="noLazyLoad donate-img" src="/images/donate2.png" alt="No Donate Image!">	
+	</div>
+
+	<span class="donate-word">愿你一生努力，一生被爱。</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
+
+ 
+        
+	
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn">
+	<span class="iconfont icon-share"></span>
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		   			             
+            <a class="iconfont  icon-share-qq -mob-share-qq"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weixin -mob-share-weixin"></a>		
+     	   			             
+            <a class="iconfont  icon-share-weibo -mob-share-weibo"></a>		
+     	   			             
+            <a class="iconfont  icon-share-douban -mob-share-douban"></a>		
+     	   			             
+            <a class="iconfont  icon-share-facebook -mob-share-facebook"></a>		
+     	   			             
+            <a class="iconfont  icon-share-twitter -mob-share-twitter"></a>		
+     	   			             
+            <a class="iconfont  icon-share-google -mob-share-google"></a>		
+     	   
+	</div>	
+
+      </div>  
+    <nav class="pf-paginator">
+      
+         
+          <a href="/2017/08/30/Markdown的基本用法/" data-hover="Markdown的基本用法">上一篇</a>      
+            
+        
+      
+        
+        <a href="/2017/08/27/found-git”的解决方案/" data-hover="“ERROR Deployer not found:git”的解决方案"> 下一篇</a>
+            
+  </nav>   
+  </div>
+</div> 
+	
+
+
+    
+    <div id="disqus_thread"></div>
+
+    <script>
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://'+'lemonreds'+'.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());    
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
+    <noscript>Please enable JavaScript to view the  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+
+	
+</article>
+
+	<div class="toc-container">
+			<div class="sidebar">
+			<p class="toc-title">
+				<i class="iconfont icon-toc"></i>
+				目录
+			</p>
+			<div class="toc-list">
+				<ol class="toc-inner"><li class="toc-inner-item toc-inner-level-3"><a class="toc-inner-link" href="#其实只是个笔记，方便拿来看看"><span class="toc-inner-text">其实只是个笔记，方便拿来看看</span></a></li></ol><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#Hexo"><span class="toc-inner-text">Hexo</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#简写"><span class="toc-inner-text">简写</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#服务器"><span class="toc-inner-text">服务器</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#监视文件变动"><span class="toc-inner-text">监视文件变动</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#完成后部署"><span class="toc-inner-text">完成后部署</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#草稿"><span class="toc-inner-text">草稿</span></a></li><li class="toc-inner-item toc-inner-level-2"><a class="toc-inner-link" href="#模板"><span class="toc-inner-text">模板</span></a>
+			</li></div>
+		</div>
+	</div>
+
+          </section> 
+      </div>            
+    
+    <a id="backTop">
+      <span>
+        <i class="iconfont icon-backtotop"></i>
+      </span>
+    </a> 
+
+  
+    
+    <div class="search-container sildeUpMin">
+        <div class="search-header">
+            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">
+            <span class="search-cancel">
+                <i class="iconfont icon-cancel">
+            </i></span>
+        </div>
+        <div id="search-result" class="search-result"></div>
+    </div>
+ 
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon" src="/images/favicon.png">   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">首页
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">归档
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">标签
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">关于
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
+            
+         
+      
+</div>        
+    
+
+
+
+     
+    
+
+
+
+
+<footer id="footer">	    
+
+		
+		<div class="footer-copyright">
+		&copy;
+		
+		2018		
+	
+		davont
+		<br>
+
+		Theme By
+		<a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a>	
+		</div>			
+	 
+</footer>   
+
+  
+
+    <script src="/nayo.bundle.js"></script>           
+  </body>        
+</html>
