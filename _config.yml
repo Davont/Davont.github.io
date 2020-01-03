@@ -95,7 +95,11 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: cactus
 
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repository: root@47.98.33.249:/home/git/blog.git
+  branch: master
+
