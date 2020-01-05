@@ -49,17 +49,17 @@ sudo systemctl enable nginx.service
 
 ### Nginx启动
 ```
-systemcel start nginx
+systemctl start nginx
 ```
 
 ### Nginx停止
 ```
-systemcel stop nginx
+systemctl stop nginx
 ```
 
 ### Nginx重启
 ```
-systemcel restart nginx
+systemctl restart nginx
 ```
 
 ### Nginx 查看状态

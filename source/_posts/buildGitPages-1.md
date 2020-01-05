@@ -148,7 +148,7 @@ Enter same passphrase again:<再次输入加密串>
 
 
 完成后我们来验证一下是否成功，在命令行上输入：
-```
+```text
 $ ssh -T git@github.com
 ```
 
