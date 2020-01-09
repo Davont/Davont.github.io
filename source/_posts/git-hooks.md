@@ -1,6 +1,6 @@
 ---
 title: 使用Git-Hooks将博客部署到VPS
-date: 2020-01-04 03:04:17
+date: 2018-10-15 03:04:17
 tags: [git,linux]
 ---
 # 前言

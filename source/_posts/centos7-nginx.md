@@ -1,6 +1,6 @@
 ---
 title: 在centOS7通过yum安装nginx
-date: 2020-01-03 18:46:11
+date: 2018-10-03 18:46:11
 tags: [Nginx,linux]
 ---
 之前小白在服务器上安装nginx配置，费了老半天，第一是不懂服务器操作，主要是linux相关命令，没有本地ubantu图形化，也不太懂yum，systemctl命令。不过身为前端开发，不能局限于前端，要有爱折腾的心。

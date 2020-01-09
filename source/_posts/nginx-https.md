@@ -1,6 +1,6 @@
 ---
 title: 使用nginx配置SSL证书
-date: 2020-01-03 16:34:33
+date: 2018-05-15 16:34:33
 tags: [Nginx,ssl,https,linux]
 ---
 # 介绍
