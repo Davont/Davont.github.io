@@ -5,23 +5,25 @@ tags: [React,js]
 ---
 # 前言
 实习公司的技术栈是React-Native，得学React，再加上React本身非常流行。我记得之前去谷歌开发者大会上，有人问了一个问题，React作为前端框架，它的优势到底是什么？演讲的大牛回答：生态。好的生态，才会有未来持续变好的可能，最近几年无数的例子证明，没有优秀的生态环境，没有频繁的维护跟新，没有友好的交流社区，历史终究会把你遗忘。
-# 笔记介绍
-## **初学，不求深刻，只求简洁。一切以接地气，大白话为主。**
+## 笔记初衷
+**初学，不求深刻，只求简洁。一切以接地气，大白话为主。**
 # 笔记知识点
 ## 组件
 组件就是网页上的一部分，网页整体上就是一个大组件，大组件可以继续拆分，某种意义上，HTML标签也可以称得上是组件。
 React中，大写字母都是组件。
 一开始引入React
 ```
-import React from 'react'
+import React from 'react'；
+import ReactDOM from 'react-dom';
 ```
 引入它的意义是让我们能够理解下面的语法（大写字母的定义之类的）
-ReactDom 是可以让组件挂载到Dom节点上。
-（意思是你虽然能在网页上看到元素，但在html源代码里看不到相关元素）
+ReactDOM 是可以让组件挂载到Dom节点上。
+（意思是你虽然能在网页上看到元素，但在html源代码里看不到相关元素,这是因为react是挂载dom上去的）
 
 ## react dom
 
-react 不用直接操作dom，而是操作数据
+react 不用直接操作dom，而是操作数据，和Vue一样，都是MVVM框架。
+```
 constructor(props){
     super(props);
     this.state={
@@ -31,7 +33,8 @@ constructor(props){
         ]
     }
 }
-意思： todolist 这个类刚被创建的时候，construction 会被执行，super进行初始化，不用管，stats可以存许多数据
+```
+解释：todolist 这个类刚被创建的时候，construction 会被执行，super进行初始化，不用管，stats可以存许多数据
 
 
 ### this.state
